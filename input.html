@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Types of Input</title>
+    <style>
+        <!-This is a stylesheet-->
+    </style>
+  </head>
+  <body>
+    <!--Home Button-->
+    <a href="index.html">HOME</a><br>
+    <!--This is a button-->
+    <label>This is a button</label> <br>
+    <input type="button" name="" value="Add to favorites">
+    <hr>
+
+    <!--This is a checkbox-->
+    <label>This is a checkbox</label> <br>
+    <fieldset>
+      <legend>Choose your colors:</legend>
+        <div>
+          <label>White</label>
+          <input type="checkbox" name="" value="" checked>
+        </div>
+        <div>
+          <label>Brown</label>
+          <input type="checkbox" name="" value="">
+        </div>
+        <div>
+          <label>Gray</label>
+          <input type="checkbox" name="" value="">
+        </div>
+    </fieldset>
+    <hr>
+
+    <!--This is a color input-->
+    <p>Choose your monter's colors:</p>
+    <div>
+      <label>Head</label>
+      <input type="color" name="" value="" value="#e66465">
+    </div>
+    <div>
+      <label>body</label>
+      <input type="color" name="" value="" value="#f6b73c">
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <!--This is date input-->
+    <label>Start Date:</label>
+    <input type="date" name="" value="2022-12-11" min="2022-01-01" max="2022-12-31">
+    <br>
+    <br>
+    <hr>
+
+    <!--This is a date-time local-->
+    <label>Choose a time for your appointment</label> <br>
+    <input type="datetime-local" name="" value="2022-12-11T19:30" min="2022-01-01T00:00" max="2022-12-31T00:00">
+    <br>
+    <br>
+    <hr>
+
+    <!--This is an Email input-->
+    <label>Email:</label><br>
+    <input type="email" name="" value=".+@globex\.com" size="30" required>
+    <br>
+    <br>
+    <hr>
+
+    <!--This is for file input-->
+    <label>Choose a profile picture</label><br>
+    <input type="file" name="" value="" accept="image/png, image/jpeg">
+    <br>
+    <br>
+    <hr>
+
+    <!--This is an image input-->
+    <p>Sign in your account:</p>
+    <div>
+      <label>User ID:</label><br>
+      <input type="text" name="" value="" name="userId">
+    </div>
+    <input type="image" name="" value="" alt="Login" src="images/ken.jpg.png">
+    <br>
+    <hr>
+
+    <!--This is a month input-->
+    <label>Start Month:</label><br>
+    <input type="month" name="" value="" min="2022-01" max="2022-12">
+    <br>
+    <hr>
+
+    <!--This a number input-->
+    <label>Pick a number from (1-100)</label> <br>
+    <input type="number" name="" value="" min="1" max="100">
+    <br>
+    <hr>
+
+    <!--This is an password input-->
+    <form>
+      <div>
+        <label>Username:</label>
+        <input type="text" name="" value="" placeholder="Username" required>
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="" value="" placeholder="Password (8 characters minimum)" required>
+      </div>
+      <input type="submit" name="" value="Sign In">
+    </form>
+    <br>
+    <hr>
+
+    <!--This is a radio button-->
+    <fieldset id="radio">
+      <legend>Select a maintenace drone:</legend>
+
+      <div>
+        <label>Huey</label>
+        <input type="radio" name="" value="" id="heuy" checked>
+      </div>
+      <div>
+        <label>Dewey</label>
+        <input type="radio" name="" value="">
+      </div>
+      <div>
+        <label>Louie</label>
+        <input type="radio" name="" value="">
+      </div>
+
+    </fieldset>
+    <br>
+    <hr>
+
+    <!--This is a range input-->
+    <p>Audio settings:</p>
+      <div>
+        <label>Volume:</label>
+        <input type="range" name="" value="" min="0" max="11">
+      </div>
+      <div>
+        <label>Cowbell</label>
+        <input type="range" name="" value="" min="0" max="100 value="90">
+      </div>
+      <br>
+      <hr>
+
+      <!--This is a reset input-->
+      <form class="" action="index.html" method="post">
+        <div class="">
+          <label for="">User ID:</label>
+          <input type="text" name="" value=""> <br>
+
+          <input type="reset" name="" value="Reset"> <br>
+          <input type="submit" name="" value="Submit">
+        </div>
+      </form>
+      <br>
+      <hr>
+
+      <!--This is a search input-->
+      <label for="">Search in site:</label><br>
+      <input type="search" name="" value=""> <br>
+      <button type="button" name="button">search</button>
+      <br><hr>
+
+      <!--This is a submit input-->
+      <input type="submit" name="" value="Send Request">
+      <br>
+      <hr>
+
+      <!--This is telelephone input-->
+      <label for="">Enter your phone number</label><br>
+      <input type="tel" name="" value=""  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+      <small>Format: 123-145-7890</small>
+      <br>
+      <hr>
+
+      <!--This is a text input-->
+      <label for="">Name (4 to 8 characters)</label> <br>
+      <input type="text" name="" value="" minlength="4" maxlength="8" size="10">
+      <br>
+      <hr>
+
+      <!--This is a time input-->
+      <label for="">Choose a time for your meeting:</label><br>
+      <input type="time" name="" value="" min="09:00" max="18:00" required>
+      <small>Office hours are 9am to 6pm</small>
+      <br>
+      <hr>
+
+      <!--This is an url input-->
+      <label for="">Enter an https:// URL:</label> <br>
+      <input type="url" name="" value="" pattern="https://.*" placeholder="https://example.com" size="30" required>
+      <br>
+      <hr>
+
+      <!--This is a week input-->
+      <label for="">Choose a week in May or June:</label> <br>
+      <input type="week" name="" value="" mind="2018-W18" max="2018-W26">
+
+  </body>
+</html>
